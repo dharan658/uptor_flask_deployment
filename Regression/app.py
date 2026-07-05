@@ -20,7 +20,7 @@ def predict():
     prediction = model.predict([[size]])
 
     return jsonify({
-        "house_size": size,
+        "Size_of_House": size,
         "predicted_price": float(prediction[0])
     })
 
